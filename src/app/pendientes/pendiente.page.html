@@ -1,0 +1,16 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Pendientes Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <app-list [terminado]="false"></app-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="addList()">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+</ion-content>
